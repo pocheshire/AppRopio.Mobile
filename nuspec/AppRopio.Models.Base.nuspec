@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements -->
+        <id>AppRopio.Models.Base</id>
+        <version>$version$</version>
+        <title>AppRopio.Models.Base</title>
+        
+        <!-- Template elements -->
+        <description>AppRopio - mobile apps builder for iOS/Android based on Xamarin</description>
+        <authors>AppRopio</authors>
+        <owners>AppRopio</owners>
+        <copyright>AppRopio</copyright>
+        <projectUrl>https://github.com/AppRopio</projectUrl>
+        <iconUrl>https://avatars1.githubusercontent.com/u/34096258</iconUrl>
+        <licenseUrl>https://github.com/AppRopio/AppRopio.Mobile/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <tags>AppRopio;MvvmCross;Xamarin;CSharp;C-Sharp;Android;Droid;iOS;Monodroid;Monotouch;Mono;app;constructor;builder;native</tags>
+        <language>C#</language>
+        <releaseNotes></releaseNotes>
+    </metadata>
+
+    <files>
+        <!-- PCL -->
+        <file src="..\bin\Release\AppRopio.Models.Base.dll" target="lib\portable-net45+win+wpa81+wp80" />
+        <file src="..\bin\Release\AppRopio.Models.Base.pdb" target="lib\portable-net45+win+wpa81+wp80" />
+    </files>
+</package>

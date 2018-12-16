@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements -->
+        <id>AppRopio.Base</id>
+        <version>$version$</version>
+        <title>AppRopio.Base</title>
+        
+        <!-- Template elements -->
+        <description>AppRopio - mobile apps builder for iOS/Android based on Xamarin</description>
+        <authors>AppRopio</authors>
+        <owners>AppRopio</owners>
+        <copyright>AppRopio</copyright>
+        <projectUrl>https://github.com/AppRopio</projectUrl>
+        <iconUrl>https://avatars1.githubusercontent.com/u/34096258</iconUrl>
+        <licenseUrl>https://github.com/AppRopio/AppRopio.Mobile/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <tags>AppRopio;MvvmCross;Xamarin;CSharp;C-Sharp;Android;Droid;iOS;Monodroid;Monotouch;Mono;app;constructor;builder;native</tags>
+        <language>C#</language>
+        <releaseNotes></releaseNotes>
+
+        <dependencies>
+            <!-- All -->
+            <group>
+                <dependency id="AppRopio.Models.Base" version="[$version$]" />
+                <dependency id="MvvmCross" version="5.7.0" />
+                <dependency id="MvvmCross.Binding" version="5.7.0"/>
+                <dependency id="MvvmCross.Core" version="5.7.0"/>
+                <dependency id="MvvmCross.Platform" version="5.7.0"/>
+                <dependency id="MvvmCross.Plugin.DownloadCache" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.File" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.Json" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.Network" version="5.7.0" />
+                <dependency id="Newtonsoft.Json" version="11.0.2"/>
+                <dependency id="Fody" version="3.0.3" />
+                <dependency id="Plugin.Permissions" version="3.0.0.12"  />
+                <dependency id="Plugin.Share" version="7.1.1"  />
+                <dependency id="Realm" version="3.2.1"  />
+                <dependency id="Xam.Plugin.ExternalMaps" version="4.0.1"  />
+                <dependency id="Xam.Plugin.Geolocator" version="4.5.0.6"  />
+                <dependency id="Xam.Plugins.Messaging" version="5.2.0"  />
+                <dependency id="Xam.Plugins.Settings" version="3.1.1"  />
+            </group>
+
+            <!-- Android -->
+            <group targetFramework="MonoAndroid">
+            
+                <dependency id="Glide.Xamarin" version="4.1.1" />
+                <dependency id="MvvmCross.Droid.Support.V7.AppCompat" version="5.7.0" />
+                <dependency id="MvvmCross.Droid.Support.V7.RecyclerView" version="5.7.0" />
+                <dependency id="Plugin.CurrentActivity" version="2.1.0.4" />
+                <dependency id="Xamarin.Android.Support.Constraint.Layout" version="1.1.2" />
+                <dependency id="Xamarin.Android.Support.CustomTabs" version="27.0.2.1" />
+                <dependency id="Xamarin.GooglePlayServices.Maps" version="60.1142.1" />
+
+                <!-- Common part -->
+                <dependency id="AppRopio.Models.Base" version="[$version$]" />
+                <dependency id="MvvmCross" version="5.7.0" />
+                <dependency id="MvvmCross.Binding" version="5.7.0"/>
+                <dependency id="MvvmCross.Core" version="5.7.0"/>
+                <dependency id="MvvmCross.Platform" version="5.7.0"/>
+                <dependency id="MvvmCross.Plugin.DownloadCache" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.File" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.Json" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.Network" version="5.7.0" />
+                <dependency id="Newtonsoft.Json" version="11.0.2"/>
+                <dependency id="Fody" version="3.0.3" />
+                <dependency id="Plugin.Permissions" version="3.0.0.12"  />
+                <dependency id="Plugin.Share" version="7.1.1"  />
+                <dependency id="Realm" version="3.2.1"  />
+                <dependency id="Xam.Plugin.ExternalMaps" version="4.0.1"  />
+                <dependency id="Xam.Plugin.Geolocator" version="4.5.0.6"  />
+                <dependency id="Xam.Plugins.Messaging" version="5.2.0"  />
+                <dependency id="Xam.Plugins.Settings" version="3.1.1"  />
+                
+            </group>
+
+            <!-- iOS -->
+            <group targetFramework="Xamarin.iOS10">
+            
+                <dependency id="modernhttpclient" version="2.4.2" />
+
+                <!-- Common part -->
+                <dependency id="AppRopio.Models.Base" version="[$version$]" />
+                <dependency id="MvvmCross" version="5.7.0" />
+                <dependency id="MvvmCross.Binding" version="5.7.0"/>
+                <dependency id="MvvmCross.Core" version="5.7.0"/>
+                <dependency id="MvvmCross.Platform" version="5.7.0"/>
+                <dependency id="MvvmCross.Plugin.DownloadCache" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.File" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.Json" version="5.7.0" />
+                <dependency id="MvvmCross.Plugin.Network" version="5.7.0" />
+                <dependency id="Newtonsoft.Json" version="11.0.2"/>
+                <dependency id="Fody" version="3.0.3" />
+                <dependency id="Plugin.Permissions" version="3.0.0.12"  />
+                <dependency id="Plugin.Share" version="7.1.1"  />
+                <dependency id="Realm" version="3.2.1"  />
+                <dependency id="Xam.Plugin.ExternalMaps" version="4.0.1"  />
+                <dependency id="Xam.Plugin.Geolocator" version="4.5.0.6"  />
+                <dependency id="Xam.Plugins.Messaging" version="5.2.0"  />
+                <dependency id="Xam.Plugins.Settings" version="3.1.1"  />
+            </group>
+        </dependencies>
+    </metadata>
+
+    <files>
+    <!-- PCL -->
+        <file src="..\bin\Release\AppRopio.Base.API.dll" target="lib\portable-net45+win+wpa81+wp80" />
+        <file src="..\bin\Release\AppRopio.Base.API.pdb" target="lib\portable-net45+win+wpa81+wp80" />
+
+        <file src="..\bin\Release\AppRopio.Base.Core.dll" target="lib\portable-net45+win+wpa81+wp80" />
+        <file src="..\bin\Release\AppRopio.Base.Core.pdb" target="lib\portable-net45+win+wpa81+wp80" />
+
+    <!-- Droid -->
+        <file src="..\bin\Release\AppRopio.Base.Droid.dll" target="lib\MonoAndroid" />
+        <file src="..\bin\Release\AppRopio.Base.Droid.pdb" target="lib\MonoAndroid" />
+        
+        <!-- Common part -->
+        <file src="..\bin\Release\AppRopio.Base.API.dll" target="lib\MonoAndroid" />
+        <file src="..\bin\Release\AppRopio.Base.API.pdb" target="lib\MonoAndroid" />
+        
+        <file src="..\bin\Release\AppRopio.Base.Core.dll" target="lib\MonoAndroid" />
+        <file src="..\bin\Release\AppRopio.Base.Core.pdb" target="lib\MonoAndroid" />
+
+    <!-- iOS -->
+        <file src="..\bin\Release\AppRopio.Base.iOS.dll" target="lib\Xamarin.iOS10" />
+        <file src="..\bin\Release\AppRopio.Base.iOS.pdb" target="lib\Xamarin.iOS10" />
+        
+        <!-- Common part -->
+        <file src="..\bin\Release\AppRopio.Base.API.dll" target="lib\Xamarin.iOS10" />
+        <file src="..\bin\Release\AppRopio.Base.API.pdb" target="lib\Xamarin.iOS10" />
+        
+        <file src="..\bin\Release\AppRopio.Base.Core.dll" target="lib\Xamarin.iOS10" />
+        <file src="..\bin\Release\AppRopio.Base.Core.pdb" target="lib\Xamarin.iOS10" />
+    </files>
+</package>
