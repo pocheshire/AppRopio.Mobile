@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements -->
+        <id></id>
+        <version>$version$</version>
+        <title></title>
+        
+        <!-- Template elements -->
+        <description>AppRopio - mobile apps builder for iOS/Android based on Xamarin</description>
+        <authors>AppRopio</authors>
+        <owners>AppRopio</owners>
+        <copyright>AppRopio</copyright>
+        <projectUrl>https://github.com/AppRopio</projectUrl>
+        <iconUrl>https://avatars1.githubusercontent.com/u/34096258</iconUrl>
+        <licenseUrl>https://github.com/AppRopio/AppRopio.Mobile/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <tags>AppRopio;MvvmCross;Xamarin;CSharp;C-Sharp;Android;Droid;iOS;Monodroid;Monotouch;Mono;app;constructor;builder;native</tags>
+        <language>C#</language>
+        <releaseNotes></releaseNotes>
+
+    <dependencies>
+            <!-- All -->
+            <group>
+                <dependency id="AppRopio.Base" version="[$version$]" />
+            </group>
+
+            <!-- Android -->
+            <group targetFramework="MonoAndroid">
+
+                <!-- Common part -->
+                <dependency id="AppRopio.Base" version="[$version$]" />
+                
+            </group>
+
+            <!-- iOS -->
+            <group targetFramework="Xamarin.iOS10">
+
+                <!-- Common part -->
+                <dependency id="AppRopio.Base" version="[$version$]" />
+            </group>
+        </dependencies>
+    </metadata>
+
+    <files>
+    <!-- PCL -->
+
+        <file src="..\bin\Release\.dll" target="lib\portable-net45+win+wpa81+wp80" />
+        <file src="..\bin\Release\.pdb" target="lib\portable-net45+win+wpa81+wp80" />
+
+    <!-- Droid -->
+        <file src="..\bin\Release\.dll" target="lib\MonoAndroid" />
+        <file src="..\bin\Release\.pdb" target="lib\MonoAndroid" />
+
+    <!-- iOS -->
+        <file src="..\bin\Release\.dll" target="lib\Xamarin.iOS10" />
+        <file src="..\bin\Release\.pdb" target="lib\Xamarin.iOS10" />
+    </files>
+</package>

@@ -1,1 +1,42 @@
-﻿
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <!-- Required elements -->
+        <id>AppRopio.Base.Droid.FCM</id>
+        <version>$version$</version>
+        <title>AppRopio.Base.Droid.FCM</title>
+        
+        <!-- Template elements -->
+        <description>AppRopio - mobile apps builder for iOS/Android based on Xamarin</description>
+        <authors>AppRopio</authors>
+        <owners>AppRopio</owners>
+        <copyright>AppRopio</copyright>
+        <projectUrl>https://github.com/AppRopio</projectUrl>
+        <iconUrl>https://avatars1.githubusercontent.com/u/34096258</iconUrl>
+        <licenseUrl>https://github.com/AppRopio/AppRopio.Mobile/blob/master/LICENSE</licenseUrl>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <tags>AppRopio;MvvmCross;Xamarin;CSharp;C-Sharp;Android;Droid;iOS;Monodroid;Monotouch;Mono;app;constructor;builder;native</tags>
+        <language>C#</language>
+        <releaseNotes></releaseNotes>
+
+        <dependencies>
+
+                <!-- Android -->
+                <group targetFramework="MonoAndroid">
+
+                    <!-- Common part -->
+                    <dependency id="AppRopio.Base" version="[$version$]" />
+                    <dependency id="Xamarin.Firebase.Messaging" version="60.1142.1" />
+                    
+                </group>
+        
+        </dependencies>
+
+    </metadata>
+
+    <files>
+    <!-- Droid -->
+        <file src="..\bin\Release\AppRopio.Base.Droid.FCM.dll" target="lib\MonoAndroid" />
+        <file src="..\bin\Release\AppRopio.Base.Droid.FCM.pdb" target="lib\MonoAndroid" />
+    </files>
+</package>
